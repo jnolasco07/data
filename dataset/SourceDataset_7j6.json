@@ -1,0 +1,78 @@
+{
+	"name": "SourceDataset_7j6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Cannabis_train.csv",
+				"folderPath": "cannabis",
+				"container": "container1"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SalesDate",
+				"type": "String"
+			},
+			{
+				"name": "Organization",
+				"type": "String"
+			},
+			{
+				"name": "RowWeights",
+				"type": "String"
+			},
+			{
+				"name": "DayOfInterest",
+				"type": "String"
+			},
+			{
+				"name": "DayOfInterestCode",
+				"type": "String"
+			},
+			{
+				"name": "DayOfWeek",
+				"type": "String"
+			},
+			{
+				"name": "DayOfWeekCode",
+				"type": "String"
+			},
+			{
+				"name": "IsOrdinaryDay",
+				"type": "String"
+			},
+			{
+				"name": "LastWeekIQRLogSalesPrice",
+				"type": "String"
+			},
+			{
+				"name": "LastWeekLog1pDemandInThou",
+				"type": "String"
+			},
+			{
+				"name": "LastWeekLog1pNumReturns",
+				"type": "String"
+			},
+			{
+				"name": "LastWeekSkewLogSalesPrice",
+				"type": "String"
+			},
+			{
+				"name": "Log1pDemandInThou",
+				"type": "String"
+			}
+		]
+	}
+}
